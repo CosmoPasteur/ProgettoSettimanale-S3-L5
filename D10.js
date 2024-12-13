@@ -223,7 +223,14 @@ console.log("****************************************");
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
-
+console.log("ESERCIZIO 12:");
+function newestMovie(movies) {
+  return movies.reduce((newest, current) => {
+    return parseInt(current.Years) > parseInt(newest.Year) ? current : newest;
+  })
+}
+console.log(newestMovie(movies));
+console.log("****************************************");
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
