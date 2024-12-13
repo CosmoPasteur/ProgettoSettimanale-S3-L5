@@ -214,11 +214,11 @@ console.log("****************************************");
 */
 console.log("ESERCIZIO 11:");
 function deleteProp(obj, str) {
-  delete obj[prop];   //rimuove la proprietà dell'oggetto
+  delete obj["prop"];   //rimuove la proprietà dell'oggetto
   return obj;   //obj modificato
 }
 const member = { name: "Carlo", age: 20, country: "Italia"};
-console,log(deleteProp(member, "age"));
+console.log(deleteProp(member, "age"));
 console.log("****************************************");
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
@@ -229,12 +229,16 @@ function newestMovie(movies) {
     return parseInt(current.Years) > parseInt(newest.Year) ? current : newest;
   })
 }
-console.log(newestMovie(movies));
+console.log(newestMovie('movies'));
 console.log("****************************************");
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
-
+console.log("ESERCIZIO 13:");
+function countMovies (movies) {
+  return movies.leght;
+}
+console.log("****************************************");
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
